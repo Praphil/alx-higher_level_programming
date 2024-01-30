@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""8-rectangle, built for Python project 0x08 task 8.
+"""8-rectangle, built for Praise Python project 0x08 task 8.
 """
 
 
