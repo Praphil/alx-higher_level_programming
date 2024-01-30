@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""1-rectangle, built for Python project 0x08 task 1.
+"""
 
 
 class Rectangle:
