@@ -1,4 +1,3 @@
-101-locked_class.py
 #!/usr/bin/python3
 """Defines a locked class."""
 
