@@ -1,2 +1,3 @@
 #!/usr/bin/node
-exports.add = (a, b) => a + b;
+const result = add(5, 3);
+console.log(result); // This will print 8
