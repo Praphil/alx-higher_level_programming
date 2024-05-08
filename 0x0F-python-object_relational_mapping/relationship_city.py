@@ -1,16 +1,20 @@
 #!/usr/bin/python3
-from sqlalchemy import Column, Integer, String, text, ForeignKey
-from relationship_state import Base
+from sqlalchemy import Column, Integer, String, text
+from sqlalchemy.orm import relationship
+from sqlalchemy.ext.declarative import declarative_base
 """
     Module that performs creates a States class based off of Base.
 """
 
+Base = declarative_base()
 
-class City(Base):
+
+class State(Base):
     """
-        The ``City`` class which inherits from ``Base`` class.
+        The ``States`` class which inherits from ``Base`` class.
     """
-    __tablename__ = 'cities'
+    __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
+
+    cities = relationship("City", backref="state", cascade="all, delete"))
